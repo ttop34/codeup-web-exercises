@@ -1,0 +1,28 @@
+.fancy-header {
+    color: purple;
+    font-family: Geneva
+
+}
+
+h2 {
+    color: fuchsia;
+    text-decoration: underline;
+    font-family: Courier;
+
+}
+
+li {
+    color: turquoise;
+}
+
+html {
+    background-color: yellow;
+}
+
+td,th {
+    color: lightseagreen;
+}
+
+th {
+    font-family:"American Typewriter";
+}
