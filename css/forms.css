@@ -21,8 +21,8 @@ input[type=password], select {
 }
 
 @-webkit-keyframes mymove {
-    from {left: 0px;}
-    to {left: 300px;}
+    from {left: 0;}
+    to {left: 656px;}
 }
 
 
@@ -38,7 +38,7 @@ input[type=password], select {
 }
 
 
-}
+
 
 #bio {
     width: 50%;
@@ -49,7 +49,7 @@ input[type=password], select {
 
 }
 
-#r1 {animation-timing-function: Veridian Dynamics Registration!;}
+
 
 input[type=submit] {
     width: 50%;
@@ -67,7 +67,7 @@ input[type=submit]:hover {
 }
 h1 {
     color: darkorange;
-    font-family: Helvetica;
+    font-family: serif;
 }
 
 h1 {
@@ -81,5 +81,5 @@ form {
 
 .label {
     color: #ffffff;
-    font-family: "Arial Rounded MT Bold";
+    font-family: sans-serif;
 }
