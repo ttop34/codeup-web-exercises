@@ -1,19 +1,84 @@
-H1 {
+body {
+    text-align: center;
+    background: url("http://az616578.vo.msecnd.net/files/2017/01/01/636188940068721468-1751720374_dreaming_boy_by_shaake_gfx.jpg")
+    repeat;
+}
+
+input[type=text], select {
+     width: 50%;
+     border: 2px solid orange;
+     border-radius: 6px;
+     box-sizing: border-box;
+     padding:6px;
+ }
+
+input[type=password], select {
+    width: 50%;
+    border: 2px solid orange;
+    border-radius: 6px;
+    box-sizing: border-box;
+    padding:6px;
+}
+
+@-webkit-keyframes mymove {
+    from {left: 0px;}
+    to {left: 300px;}
+}
+
+
+#r1 {
+    border-radius: 25px;
+    background: #73AD21;
+    padding: 20px;
+    width:45%;
+    height: 150px;
+    position: relative;
+    -webkit-animation: mymove 5s infinite;
+    animation: mymove 5s infinite;
+}
+
+}
+
+#bio {
+    width: 50%;
+    border: 2px solid orange;
+    border-radius: 6px;
+    box-sizing: border-box;
+    padding: 6px;
+
+}
+
+#r1 {animation-timing-function: Veridian Dynamics Registration!;}
+
+input[type=submit] {
+    width: 50%;
+    background-color: yellow;
+    color: black;
+    border: 2px solid orange;
+    border-radius: 6px;
+    cursor: pointer;
+
+}
+
+input[type=submit]:hover {
+    background-color: azure;
+
+}
+h1 {
     color: darkorange;
     font-family: Helvetica;
 }
 
-#browser {
-    color: blue;
-    font-size: 20px;
+h1 {
+    text-align: center;
 }
 
 form {
-    color:brown;
+    color: darkorange;
+    font-size: 20px;
 }
 
 .label {
-    color: #ffbbcc;
+    color: #ffffff;
+    font-family: "Arial Rounded MT Bold";
 }
-
-
