@@ -1,0 +1,50 @@
+#flag {
+    height: 150px;
+    width: 250px;
+    border: 1px solid black;
+    background-color: red;
+    position: relative;
+}
+
+#tl {
+    position: absolute;
+    top:8px;
+    height:75px;
+    width:75px;
+    border-right:4px solid white;
+    border-bottom: 4px solid white;
+    background-color: blue;
+}
+
+#tr {
+    position: absolute;
+    top:8px;
+    left:100px;
+    height: 73px;
+    width: 156px;
+    border-left: 4px solid white;
+    border-bottom:4px solid white;
+    background-color: blue;
+}
+
+#bl {
+    position: absolute;
+    top:100px;
+    height:56px;
+    width:75px;
+    border-right: 4px solid white;
+    border-top:4px solid white;
+    background-color: blue;
+}
+
+#br {
+    position: absolute;
+    left:100px;
+    top:100px;
+    height:56px;
+    width:156px;
+    background-color: blue;
+    border-left:4px solid white;
+    border-top:4px solid white;
+
+}

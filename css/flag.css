@@ -1,0 +1,44 @@
+#flag {
+    height: 150px;
+    width: 250px;
+    border: 1px solid grey;
+    float: left;
+    position: relative;
+}
+
+#tl {
+    height:75px;
+    width:75px;
+    border: 1px solid red;
+    background-color: red;
+}
+
+#tr {
+    position: absolute;
+    top:8px;
+    left:100px;
+    height: 75px;
+    width: 158px;
+    border: 1px solid red;
+    background-color: red;
+}
+
+#bl {
+    position: absolute;
+    top:100px;
+    height:58px;
+    width:75px;
+    border: 1px solid red;
+    background-color: red;
+}
+
+#br {
+    position: absolute;
+    left:100px;
+    top:100px;
+    height:58px;
+    width:158px;
+    background-color: red;
+    border:1px solid red;
+
+}

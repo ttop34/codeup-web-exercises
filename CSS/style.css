@@ -1,28 +1,51 @@
-.fancy-header {
-    color: purple;
-    font-family: Geneva
+header {
+    text-align: center;
 
+}
+
+.fancy-header {
+    color: #ff0e00;
+    font-family: sans-serif;
 }
 
 h2 {
-    color: fuchsia;
+    color: darkgreen;
     text-decoration: underline;
-    font-family: Courier;
 
-}
-
-li {
-    color: turquoise;
 }
 
 html {
-    background-color: yellow;
+    color: red;
+}
+
+body {
+    background-image: url("../img/rm.jpeg" );
+    background-repeat: repeat;
+    font-family: 'saira semi condensed', sans-serif;
+    color:red;
+    font-weight: bolder;
+}
+
+div {
+
+}
+
+
+html {
+    background-color: #000101;
 }
 
 td,th {
-    color: lightseagreen;
+    padding: 8px;
+    border: 4px solid #ff0e00;
+    color: #000101;
 }
 
-th {
-    font-family:"American Typewriter";
+ul, ol {
+    color: #ff0e00;
+    list-style-type: armenian;
+}
+
+.link:hover {
+    color: #11ffa2;
 }
