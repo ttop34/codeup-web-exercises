@@ -1,0 +1,57 @@
+body {
+    background-color: lightcoral;
+    font-family: Geneva;
+    font-weight: bold;
+}
+h1, h2 {
+    color: red;
+}
+
+#menu {
+    text-align: center;
+    height:650px;
+    width: 100px;
+    padding:20px;
+    border:1px solid;
+    float: left;
+    position: relative;
+    background-color: #11ffa2;
+    margin-top:10px;
+    margin-left: 0;
+}
+
+#content {
+    text-align: center;
+    height: 500px;
+    float: left;
+    position: absolute;
+    left:155px;
+}
+
+a {
+    background-color: white;
+    border: 1px solid green;
+    border-radius: 15px;
+    padding:5px;
+    background-color: rgba(0, 1, 1, 0.31);
+
+}
+
+a:hover {
+    background-color: rgba(0, 0, 255, 0.55);
+}
+
+ #men2 {
+      margin-top:50px;
+  }
+
+#men3 {
+    margin-top:50px;
+}
+#men4 {
+    margin-top:50px;
+}
+
+#men5 {
+    margin-top:50px;
+}
