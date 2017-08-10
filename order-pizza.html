@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <title>Order Pizza</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Order Pizza</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="css/custom.css">
 </head>
@@ -41,9 +41,7 @@
     </div><!-- /.container-fluid -->
 </nav>
 <div class="jumbotron">
-    <div class="container">
         <h1>Welcome to Pizza World!</h1>
-    </div>
 </div>
     <h2>Build your own pizza!</h2>
 <hr>
@@ -82,32 +80,31 @@
                 </ul>
             </div>
     </div>
-    <div class="panel-footer text-right"><button type="button" class="btn btn-primary ">Next Step<span class="glyphicon glyphicon-play" aria-hidden="true"></span></button> </div>
+    <div class="panel-footer text-right"><button type="button" class="btn btn-primary ">Next Step<span class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span></button> </div>
 </div>
 
 <div class="panel panel-info">
     <div class="panel-heading">Choose cheese and sauce</div>
     <div class="panel-body">
-    <div class="panel panel-default">
-        <div class="panel-heading">Cheese?</div>
-
-            <ul class="list-group">
-                <li class="list-group-item list-group-item-info">
-                    cheese
-                    <select class="form-control">
-                        <option>Light</option>
-                        <option>Normal</option>
-                        <option>Extra</option>
-                        <option>double</option>
-                    </select>
-                </li>
-            </ul>
-        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">Cheese?</div>
+                <ul class="list-group">
+                    <li class="list-group-item list-group-item-info">
+                        cheese
+                        <select class="form-control">
+                            <option>Light</option>
+                            <option>Normal</option>
+                            <option>Extra</option>
+                            <option>double</option>
+                        </select>
+                    </li>
+                </ul>
+            </div>
     <div class="panel panel-default">
         <div class="panel-heading">Sauce?</div>
         <ul class="list-group ">
             <li class="list-group-item list-group-item-info">
-                sauce?
+                sauce
         <select class="form-control">
             <option>Tomato sauce</option>
             <option>Marinara sauce</option>
@@ -128,7 +125,7 @@
         </ul>
     </div>
     </div>
-        <div class="panel-footer text-right"><button type="button" class="btn btn-primary "><span class="glyphicon glyphicon-triangle-left" aria-hidden="true"></span>Previous Step</button><button type="button" class="btn btn-primary ">Next Step<span class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span></button> </div>
+    <div class="panel-footer text-right"><div class="btn-group" role="group"> <button class="btn btn-primary "><span class="glyphicon glyphicon-triangle-left" aria-hidden="true"></span>Previous Step</button><button class="btn btn-primary ">Next Step<span class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span></button></div> </div>
     </div>
 
         </div>
