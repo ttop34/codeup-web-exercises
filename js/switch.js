@@ -1,11 +1,11 @@
-"use strict";
+
 //
 // // Don't change the next two lines!
 // // This creates two variables:
 // //     one with the colors of the rainbow, and another with a single randome
 // //     another with a single random color value
-// var colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
-// var color = colors[Math.floor(Math.random()*colors.length)];
+var colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
+var color = colors[Math.floor(Math.random()*colors.length)];
 
 switch (color) {
     case 'red':
@@ -23,10 +23,14 @@ switch (color) {
     case 'yellow':
         console.log('yellow is the color of a banana');
         break;
-    default :
+    case 'indigo' :
         console.log('I do not know anything by that color.');
         break;
-//
+    case 'violet' :
+        console.log('I do not know anything by that color.');
+        break;
+}
+// //
 //     // TODO: create a case statement that will handle every color except indigo and violet
 //     // TODO: when a color is encountered log a message that tells the color, and an object of that color
 //     //       example: Blue is the color of the sky.
@@ -78,8 +82,6 @@ var flipACoin = Math.floor(Math.random()* 2);
 
 var buyHouse = 1;
 
-var buyCar = 0;
-
 //  if (flipACoin === buyHouse) {
 //     console.log('buy a house dude!');
 // }
@@ -128,34 +130,35 @@ console.log(confirmed);
         var numberPicked = parseInt(prompt('please enter your number'));
         if (isNaN(numberPicked)) {
             alert("Nice try! That is not a real number buddy!");
-}
+        }
         else if (numberPicked % 2 === 0 && numberPicked > 0) {
             alert(numberPicked + " is even");
             alert(numberPicked + " plus 100 is " + (numberPicked + 100));
             alert(numberPicked + " is positive");
         }
 
-    else if (numberPicked % 2 === 0 && numberPicked > 0) {
-        alert(numberPicked + " is even");
-        alert(numberPicked + " plus 100 is " + (numberPicked + 100));
-        alert(numberPicked + " is positive");
+        else if (numberPicked % 2 === 0 && numberPicked > 0) {
+            alert(numberPicked + " is even");
+            alert(numberPicked + " plus 100 is " + (numberPicked + 100));
+            alert(numberPicked + " is positive");
+        }
+
+        else if (numberPicked % 2 === 1 && numberPicked > 0) {
+            alert(numberPicked + " is odd");
+            alert(numberPicked + " plus 100 is " + (numberPicked + 100));
+            alert(numberPicked + " is positive");
+        }
+
+        else if (numberPicked % 2 === 0 && numberPicked < 0) {
+            alert(numberPicked + " is even");
+            alert(numberPicked + " plus 100 is " + (numberPicked + 100));
+            alert(numberPicked + " is negative");
+        }
+
+        else if (numberPicked < 0) {
+            alert(numberPicked + " is odd");
+            alert(numberPicked + " plus 100 is " + (numberPicked + 100));
+            alert(numberPicked + " is negative");
+        }
     }
 
-    else if (numberPicked % 2 === 1 && numberPicked > 0) {
-        alert(numberPicked + " is odd");
-        alert(numberPicked + " plus 100 is " + (numberPicked + 100));
-        alert(numberPicked + " is positive");
-    }
-
-    else if (numberPicked % 2 === 0 && numberPicked < 0) {
-        alert(numberPicked + " is even");
-        alert(numberPicked + " plus 100 is " + (numberPicked + 100));
-        alert(numberPicked + " is negative");
-    }
-
-    else if (numberPicked < 0) {
-        alert(numberPicked + " is odd");
-        alert(numberPicked + " plus 100 is " + (numberPicked + 100));
-        alert(numberPicked + " is negative");
-    }
-}
