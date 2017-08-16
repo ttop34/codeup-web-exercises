@@ -88,6 +88,36 @@
 // // }
 //
 // (flipACoin === buyHouse) ? console.log('buy that house!') : console.log('Buy that car');
+//
+// var receipt = 60;
+// var luckyNumber = Math.floor(Math.random()* 6);
+//
+// var total;
+//
+// switch (luckyNumber) {
+//     case 0:
+//         total = receipt;
+//         break;
+//     case 1:
+//         total = .9 * receipt;
+//         break;
+//     case 2:
+//         total = .75 * receipt;
+//         break;
+//     case 3:
+//         total = .7 * receipt;
+//         break;
+//     case 4:
+//         total = .5 * receipt;
+//         break;
+//     case 5:
+//         total = 0;
+//         break;
+// }
+//
+// console.log('your total to pay is ' + total);
+
+
 
 var confirmed = confirm('would you like to enter a number?');
 console.log(confirmed);
@@ -96,33 +126,36 @@ console.log(confirmed);
 
     if (confirmed === true) {
         var numberPicked = parseInt(prompt('please enter your number'));
-    }
+        if (isNaN(numberPicked)) {
+            alert("Nice try! That is not a real number buddy!");
+}
+        else if (numberPicked % 2 === 0 && numberPicked > 0) {
+            alert(numberPicked + " is even");
+            alert(numberPicked + " plus 100 is " + (numberPicked + 100));
+            alert(numberPicked + " is positive");
+        }
 
-    if (isNaN(numberPicked)) {
-        alert("Nice try! That is not a real number buddy!");
-
-    }
-     else if (numberPicked % 2 === 0 && numberPicked > 0) {
+    else if (numberPicked % 2 === 0 && numberPicked > 0) {
         alert(numberPicked + " is even");
         alert(numberPicked + " plus 100 is " + (numberPicked + 100));
         alert(numberPicked + " is positive");
     }
 
-    else if (numberPicked % 2 === 1 && numberPicked > 0){
+    else if (numberPicked % 2 === 1 && numberPicked > 0) {
         alert(numberPicked + " is odd");
         alert(numberPicked + " plus 100 is " + (numberPicked + 100));
         alert(numberPicked + " is positive");
     }
 
     else if (numberPicked % 2 === 0 && numberPicked < 0) {
-         alert(numberPicked + " is even");
-         alert(numberPicked + " plus 100 is " + (numberPicked + 100));
-         alert(numberPicked + " is negative");
-     }
-
+        alert(numberPicked + " is even");
+        alert(numberPicked + " plus 100 is " + (numberPicked + 100));
+        alert(numberPicked + " is negative");
+    }
 
     else if (numberPicked < 0) {
         alert(numberPicked + " is odd");
         alert(numberPicked + " plus 100 is " + (numberPicked + 100));
         alert(numberPicked + " is negative");
-     }
+    }
+}
