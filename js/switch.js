@@ -92,16 +92,37 @@
 var confirmed = confirm('would you like to enter a number?');
 console.log(confirmed);
 
+
+
     if (confirmed === true) {
-        prompt('please enter your number');
+        var numberPicked = parseInt(prompt('please enter your number'));
     }
 
+    if (isNaN(numberPicked)) {
+        alert("Nice try! That is not a real number buddy!");
+
+    }
+     else if (numberPicked % 2 === 0 && numberPicked > 0) {
+        alert(numberPicked + " is even");
+        alert(numberPicked + " plus 100 is " + (numberPicked + 100));
+        alert(numberPicked + " is positive");
+    }
+
+    else if (numberPicked % 2 === 1 && numberPicked > 0){
+        alert(numberPicked + " is odd");
+        alert(numberPicked + " plus 100 is " + (numberPicked + 100));
+        alert(numberPicked + " is positive");
+    }
+
+    else if (numberPicked % 2 === 0 && numberPicked < 0) {
+         alert(numberPicked + " is even");
+         alert(numberPicked + " plus 100 is " + (numberPicked + 100));
+         alert(numberPicked + " is negative");
+     }
 
 
-
-
-
-
-
-
-
+    else if (numberPicked < 0) {
+        alert(numberPicked + " is odd");
+        alert(numberPicked + " plus 100 is " + (numberPicked + 100));
+        alert(numberPicked + " is negative");
+     }
