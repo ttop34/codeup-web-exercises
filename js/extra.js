@@ -1,18 +1,11 @@
 "use strict";
 
-var stars = prompt('what is the final length of stars?');
+var stars = prompt('choose a number of stars between 1 and 10?');
+var star = "";
 
-
-for (var i = 1; i > 0; i++) {
-    var g = '*';
-    if (i === stars) {
-        break;
-        console.log('this is the final number');
+for(var i=1;i <= stars;i++){
+    for(var j= 0;j <= i;j++){
     }
-    for (var j = 1; J <=i; j++) {
-    }
-
-
-
- console.log(i)
+    star = star + "*";
+    console.log(star);
 }
