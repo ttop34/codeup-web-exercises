@@ -96,18 +96,18 @@ var random = Math.floor((Math.random() * 100) + 1);
 
 
     function calculateTip(tipPercentage, total) {
-        return "$" + tipPercentage * total;
+        return "$" + (tipPercentage / 100) * total;
 
     }
 
-// console.log(calculateTip(0.10, 60)); // this is how to test the function yet again//
+console.log(calculateTip(0.10, 60)); // this is how to test the function yet again//
 
     var billTotal = parseInt(prompt("What was your bill total?"));
     var wantToTip = parseInt(prompt("what percentage would you like to tip?"));
 
-    var shouldTip = wantToTip / 100;
 
-    alert("You should tip " + calculateTip(shouldTip, billTotal));
+
+    alert("You should tip " + calculateTip(wantToTip, billTotal));
 
 })();
 
