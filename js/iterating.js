@@ -1,16 +1,29 @@
 (function(){
     "use strict";
 var names = ['Jessie', 'Max', 'James', 'Mark'];
+//
+// console.log('Number of elements in array is ' +names.length + ".");
+//
+// console.log(names[0] + ', ' + names[1] + ', ' + names[2] + ', ' + names[3] + '.');
 
-console.log('Number of elements in array is ' +names.length + ".");
+var numbers= [1, 2, 3, 4, 5];
 
-console.log(names[0] + ', ' + names[1] + ', ' + names[2] + ', ' + names[3] + '.');
+    // for (var i = 1; i < numbers; i++){
+    //     numbers = numbers + 2;
+    // }
+    //
 
-    // TODO: Create an array of 4 people's names using literal array notation, in a variable called 'names'.
 
-    // TODO: Create a log statement that will log the number of elements in the names array.
+    numbers.forEach(function (element, index){
+        numbers [index] = element + 2;
+    });
 
-    // TODO: Create log statements that will print each of the names array elements individually.
+console.log(numbers);
+
+
+
+
 })();
+
 
 
