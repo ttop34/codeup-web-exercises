@@ -9,13 +9,6 @@
  *  > sayHello("codeup") // returns "Hello, codeup!"
  */
 
-
-
-function sayHello(name) {
-    return "Hello, " + name + "!"
-}
-
-
 /**
  * TODO:
  * Call the function 'sayHello' and pass your name as a string literal argument.
@@ -25,6 +18,12 @@ function sayHello(name) {
  * variable to the 'sayHello' function. You should see the same output in the
  * console.
  */
+
+(function () {
+
+function sayHello(name) {
+    return "Hello, " + name + "!"
+}
 
 sayHello("Elvin");
 
@@ -36,7 +35,14 @@ var myName = "Elvin";
 
 sayHello(myName);
 
+})();
+
 /// done with this part of the code ////
+
+
+//_________________________________________________________________________________________________________________//
+
+
 
 // Don't modify the following line, it generates a random number between 1 and
 // 100 and stores it in a variable named random
@@ -56,15 +62,16 @@ var random = Math.floor((Math.random() * 100) + 1);
  * console.log *outside of the function* to check your work
  */
 
-function isOdd(number) {
-    return random % 2 === 1 ? random + " is odd": random + " is not odd";
+(function () {
 
-}
+    function isOdd(number) {
+        return random % 2 === 1 ? random + " is odd" : random + " is not odd";
 
+    }
 
+    console.log(isOdd(49)); //this is how to check if what im doing is right!//
 
-console.log(isOdd(49)); //this is how to check if what im doing is right!//
-
+})();
 
 // were done with this part of the code //
 
@@ -79,29 +86,33 @@ console.log(isOdd(49)); //this is how to check if what im doing is right!//
  * Example
  *  > calculateTip(0.20, 20) // returns 4
  */
-
-function calculateTip(tipPercentage, total) {
-    var tipAmount = "$" + tipPercentage * total;
-    return tipAmount
-}
-
-// console.log(calculateTip(0.10, 60)); // this is how to test the function yet again//
-
-
-
-
 /**
  * TODO: use prompt and alert in combination with your calculateTip function to
  * prompt the user for the bill total and a percentage they would like to tip,
  * then display the dollar amount they should tip
  */
 
+(function () {
 
 
- var billTotal = parseInt(prompt("What was your bill total?"));
- var wantToTip= parseInt(prompt("what percentage would you like to tip?"));
+    function calculateTip(tipPercentage, total) {
+        return "$" + tipPercentage * total;
 
- var shouldTip = wantToTip / 100;
+    }
 
- alert("You should tip " + calculateTip(shouldTip, billTotal));
+// console.log(calculateTip(0.10, 60)); // this is how to test the function yet again//
+
+    var billTotal = parseInt(prompt("What was your bill total?"));
+    var wantToTip = parseInt(prompt("what percentage would you like to tip?"));
+
+    var shouldTip = wantToTip / 100;
+
+    alert("You should tip " + calculateTip(shouldTip, billTotal));
+
+})();
+
+
+
+
+
 
