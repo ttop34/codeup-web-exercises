@@ -23,32 +23,32 @@ var str = "",x,y,z;
     console.log(str);
 
 
-//
-//
-//
-// function repeatStr(number, given) {
-//     return given.repeat(number);
-//
-// }
-//
-//
-//
-//
-//
-//
-//
-//
-// function isPhoneNumber(phone) {
-//      if (phone.length === 14) {
-//          return true
-//      }  else {
-//          return false;
-//      }
-// }
-//
-//
-//
-//
-//
-//
-//
+
+
+
+function repeatStr(number, given) {
+    return given.repeat(number);
+
+}
+
+
+
+
+
+
+
+
+function isPhoneNumber(phone) {
+     if (phone.length === 14) {
+         return true
+     }  else {
+         return false;
+     }
+}
+
+
+
+
+
+
+
