@@ -71,5 +71,75 @@ var person = {
     });
 
 
+// todo:
+// Create an array of objects that represent books.
+// Each book should have a title and an author property.
+// The author property should be an object with a firstName and lastName.
+// Be creative and add at least 5 books to the array
+// var books = [todo];
+
+    var books = [
+        {
+            number:1,
+            title: "The Hitchhikers Guide to the Galaxy",
+            author: {
+                f_name: "Douglas",
+                l_name: "Adams"
+            }
+        },
+        {
+            number:2,
+            title: "The Mortal Instruments",
+            author: {
+                f_name: "Cassandra",
+                l_name: "Clare"
+            }
+        },
+        {
+            number:3,
+            title: "Stand and Deliver",
+            author: {
+                f_name: "Ramon",
+                l_name: "Menendez"
+            }
+        },
+        {
+            number:4,
+            title: "Interview with a Vampire",
+            author: {
+                f_name: "Anne",
+                l_name: "Rice"
+            }
+        },
+        {
+            number:5,
+            title: "The Phantom of the Opera",
+            author: {
+                f_name: "Gaston",
+                l_name: "Leroux"
+            }
+        }
+    ];
+
+// log out the books array
+//     console.log(books);
+
+// todo:
+// Loop through the array of books using .forEach and print out the specified information about each one.
+// start loop here
+//     console.log("Book #" + todo);
+//     console.log("Title: " + todo);
+//     console.log("Author: " + todo);
+//     console.log("---");
+// end loop here
+
+    books.forEach(function(book){
+        console.log("Book #" + book.number);
+        console.log("Title:" + book.title);
+        console.log("Author:" + book.author.f_name + " " + book.author.l_name);
+        console.log("--");
+
+    })
+
 })();
 
