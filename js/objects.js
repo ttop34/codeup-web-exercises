@@ -25,7 +25,7 @@ var person = {
     first_names: "Elvin",
     last_name: "Terrell",
     say_hello:  function(){
-        return this.first_names + " " + this.last_name;
+        return "Hello from " + this.first_names + " " + this.last_name; + "!"
     },
 
     };
@@ -47,11 +47,28 @@ var person = {
      * and console.log the relevant messages for each person
      */
 
-    // var shoppers = [
-    //     {name: 'Cameron', amount: 180},
-    //     {name: 'Ryan', amount: 250},
-    //     {name: 'George', amount: 320}
-    // ];
+    var shoppers = [
+        {
+            name: 'Cameron',
+            amount: 180
+        },
+        {
+            name: 'Ryan',
+            amount: 250
+        },
+        {
+            name: 'George',
+            amount: 320
+        }
+
+    ];
+
+
+
+
+    shoppers.forEach(function(shopper) {
+        console.log(shopper.name + " owes $" + shopper.amount );
+    });
 
 
 })();
