@@ -9,7 +9,7 @@
 
             // TODO: complete this method
             // hint: area = pi * radius^2
-            return Math.PI * Math.pow(3,2)
+            return Math.PI * Math.pow(circle.radius, 2)
             // TODO: return the proper value
         },
 
