@@ -14,6 +14,13 @@
     <li data-dbid="4">Item 4</li>
     <li data-dbid="5">Item 5</li>
 </ul>
+
+<button id="btn1">Change Header</button>
+<button id="btn2">Change Sub Header</button>
+<button id="btn3">Change list items</button>
+<button id="btn4">Change Paragraph</button>
+
+
 <h2 id="sub-header">Hello Again.</h2>
 <p class="sub-paragraph">
     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
@@ -29,27 +36,43 @@
     (function() {
         "use strict";
 
+        var main = document.getElementById("btn1");
+        var changeHeader = function(){
+            mainHeader.innerHTML = "JavaScript is Cool!";
+        };
+
+        main.addEventListener('click', changeHeader, false);
+
         // TODO: Uncomment next line and get the main header element by id
          var mainHeader = document.getElementById("main-header") ;
 
-         mainHeader.innerHTML = "JavaScript is cool";
+
 
 
         // TODO: Set inner html of mainHeader to "JavaScript is Cool"
 
         // TODO: Uncomment the next line and get the sub header element by id
 
-         var subHeader = document.getElementById("sub-header");
+        var subHeader = document.getElementById("sub-header");
+
+        var changeSubHeader = document.getElementById("btn2");
+
+        var changeSub = function () {
+            subHeader.style.color = '#1512b6';
+        };
+
+        changeSubHeader.addEventListener('click', changeSub, false);
+
         // TODO: Set the text color of subHeader to blue
-         subHeader.style.color = '#1512b6';
 
 
         // TODO: Uncomment the next line and get all list items
+
          var listItems = document.getElementsByTagName("li");
 
-        // TODO: Set text color on every other list item to grey
+         var items = document.getElementById('btn3');
 
-
+        var changeitems = function(){
 
         for ( var i = 0; i < listItems.length; i += 2 ) {
 
@@ -65,10 +88,24 @@
 
 
         }
+        };
 
+        items.addEventListener('click', changeitems, false);
+
+
+        // TODO: Set text color on every other list item to grey
+
+         var subParagraphs = document.getElementsByClassName("sub-paragraph");
+
+        var paragraph = document.getElementById('btn4');
+        var changeParagraph = function(){
+            subParagraphs[0].innerText = "Mission Accomplished!"
+        };
+
+
+        paragraph.addEventListener('click', changeParagraph, false);
 
         // TODO: Uncomment the next line and get all elements with class name sub-paragraph
-        // var subParagraphs = ;
 
         // TODO: Change the text in the first sub paragraph to "Mission Accomplished!"
 
