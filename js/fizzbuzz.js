@@ -1,8 +1,8 @@
 var str = "",x,y;
 
 for (var i =1; i <=100; i++) {
-     x = i%3 ==0;
-     y = i%5 ==0;
+    x = i%3 ==0;
+    y = i%5 ==0;
 
     if (x){
         str+= 'fizz';
@@ -20,6 +20,5 @@ for (var i =1; i <=100; i++) {
 
 }
 console.log(str);
-
 
 
