@@ -17,8 +17,23 @@ var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions)
 
 
 var pepperjax = { lat: 41.298063, lng: -96.023206 };
+var tacobell = {lat:41.314524, lng:-96.024463};
+var jimmyjohns = {lat: 41.257651, lng:-96.024372};
+
+var favoritePlaces = [
+    pepperjax,
+    tacobell,
+    jimmyjohns
+];
 
 
+
+// favoritePlaces.forEach(){
+//
+// }
+
+
+ 
 // Add the marker to our existing map
 var marker = new google.maps.Marker({
     map: map,
