@@ -6,14 +6,35 @@
 
 </head>
 <body>
+<div>
+    <h1 id="head" class="codeup">this is my heading</h1>
+    <p id="first-p" class="codeup">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam deserunt numquam perspiciatis. Aliquid animi consequuntur dolore doloremque enim, eos modi tempore temporibus ut voluptas. Dicta dignissimos ex non sint temporibus?</p>
+    <p id="second-p" class="codeup">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aliquam aliquid at beatae earum eveniet explicabo fugiat hic illum maiores nobis, perferendis quas quos, repudiandae, saepe sed sunt ut vel.</p>
+    <h1 id="other" class="codeup">this is a list</h1>
+    <ul id="list" class="" >
+        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis deserunt doloremque enim esse, ipsam non perspiciatis placeat quia quidem sit suscipit temporibus veniam voluptatum! Commodi deleniti distinctio quidem velit voluptatum.</li>
+        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi at culpa eaque eveniet fugiat, inventore ipsa iure, nemo non omnis, perspiciatis quam quis quod ratione sapiente voluptate voluptates! Libero, neque.</li>
+        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate delectus fuga modi quibusdam rem, vel. Atque autem, cum dolor eius eligendi eum fuga illo in nihil nulla quod tempora ut.</li>
+    </ul>
+</div>
 
 
 <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
 <script>
     "use strict";
     $(document).ready(function(){
-        alert('the DOM has finished loading');
     });
+
+  $('li').css({'font-size': '20px'});
+
+
+  $('h1, li , p').css('background-color', 'yellow');
+
+    $('h1').each(function () {
+        alert($(this).html());
+    });
+
+
 
 
 </script>
