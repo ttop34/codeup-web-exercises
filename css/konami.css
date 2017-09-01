@@ -1,7 +1,15 @@
 #content {
     background-color: red;
-    height: 600px;
+    height: 800px;
     width: auto;
+}
+
+#unless {
+    text-align: center;
+}
+
+#just {
+    text-align: right;
 }
 
 #mortal {

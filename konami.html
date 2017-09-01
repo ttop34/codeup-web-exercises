@@ -6,11 +6,16 @@
     <link rel="stylesheet" href="css/konami.css">
 </head>
 <body>
-        <h1 id="konami">Enter The Konami Code!</h1>
+        <h1 id="konami">Enter The Konami Code!!!</h1>
+        <h1 id="unless">Unless You're an Epilectic.....</h1>
+        <h1 id="just"> Just Do it....</h1>
 
         <h1 id="mortal">You Entered The Konami Code!!!</h1>
     <div id="content">
 
+        <audio id="rick">
+            <source src="sounds/uKiB-Wubalubadubdub.mp3" type="audio/mpeg">
+        </audio>
 
     </div>
 
@@ -18,7 +23,11 @@
 <script>
     "use strict";
 
-    $('#konami').hide().delay(1000).fadeIn('slow');
+    var buzzer = $('rick')[0];
+
+    $('#konami').hide().delay(1500).fadeIn('slow');
+    $('#unless').hide().delay(4000).fadeIn('slow');
+    $('#just').hide().delay(6500).fadeIn('slow');
     $('#content').hide();
     $('#mortal').hide();
 
@@ -30,16 +39,35 @@
         if(e.keyCode === konamiCode[konami_index++]){
             if(konami_index === konamiCode.length){
                 konami_index = [];
-
-
-
-                $('#content').fadeIn(100).fadeOut(100).fadeIn(100).fadeOut(100).fadeIn(100).fadeOut(100)
+                    rick.play();
+                $('#konami, #unless, #just').hide();
+                $('#mortal').fadeIn(100).fadeOut(100).fadeIn(100).fadeOut(100).fadeIn(100).fadeOut(100)
                     .fadeIn(100).fadeOut(100).fadeIn(100).fadeOut(100).fadeIn(100).fadeOut(100).fadeIn(100).fadeOut(100).fadeIn(100);
 
 
 
-                $('#mortal').fadeIn(100).fadeOut(100).fadeIn(100).fadeOut(100).fadeIn(100).fadeOut(100)
-            .fadeIn(100).fadeOut(100).fadeIn(100).fadeOut(100).fadeIn(100).fadeOut(100).fadeIn(100).fadeOut(100).fadeIn(100);
+                $('#content').fadeIn(10).fadeOut(10).fadeIn(10).fadeOut(10).fadeIn(10).fadeOut(10)
+            .fadeIn(10).fadeOut(10).fadeIn(10).fadeOut(10).fadeIn(10).fadeOut(10).fadeIn(10).fadeOut(10).fadeIn(10).fadeIn(10).fadeOut(10).fadeIn(10).fadeOut(10).fadeIn(10).fadeOut(10)
+                    .fadeIn(10).fadeOut(10).fadeIn(10).fadeOut(10).fadeIn(10).fadeOut(10).fadeIn(10).fadeOut(10).fadeIn(10).fadeIn(10).fadeOut(10).fadeIn(10).fadeOut(10).fadeIn(10).fadeOut(10)
+                    .fadeIn(10).fadeOut(10).fadeIn(10).fadeOut(10).fadeIn(10).fadeOut(10).fadeIn(10).fadeOut(10).fadeIn(10).fadeIn(10).fadeOut(10).fadeIn(10).fadeOut(10).fadeIn(10).fadeOut(10)
+                    .fadeIn(10).fadeOut(10).fadeIn(10).fadeOut(10).fadeIn(10).fadeOut(10).fadeIn(10).fadeOut(10).fadeIn(10).fadeIn(10).fadeOut(10).fadeIn(10).fadeOut(10).fadeIn(10).fadeOut(10)
+                    .fadeIn(10).fadeOut(10).fadeIn(10).fadeOut(10).fadeIn(10).fadeOut(10).fadeIn(10).fadeOut(10).fadeIn(10).fadeIn(10).fadeOut(10).fadeIn(10).fadeOut(10).fadeIn(10).fadeOut(10)
+                    .fadeIn(10).fadeOut(10).fadeIn(10).fadeOut(10).fadeIn(10).fadeOut(10).fadeIn(10).fadeOut(10).fadeIn(10).fadeIn(10).fadeOut(10).fadeIn(10).fadeOut(10).fadeIn(10).fadeOut(10)
+                    .fadeIn(10).fadeOut(10).fadeIn(10).fadeOut(10).fadeIn(10).fadeOut(10).fadeIn(10).fadeOut(10).fadeIn(10).fadeIn(10).fadeOut(10).fadeIn(10).fadeOut(10).fadeIn(10).fadeOut(10)
+                    .fadeIn(10).fadeOut(10).fadeIn(10).fadeOut(10).fadeIn(10).fadeOut(10).fadeIn(10).fadeOut(10).fadeIn(10).fadeIn(10).fadeOut(10).fadeIn(10).fadeOut(10).fadeIn(10).fadeOut(10)
+                    .fadeIn(10).fadeOut(10).fadeIn(10).fadeOut(10).fadeIn(10).fadeOut(10).fadeIn(10).fadeOut(10).fadeIn(10).fadeIn(10).fadeOut(10).fadeIn(10).fadeOut(10).fadeIn(10).fadeOut(10)
+                    .fadeIn(10).fadeOut(10).fadeIn(10).fadeOut(10).fadeIn(10).fadeOut(10).fadeIn(10).fadeOut(10).fadeIn(10).fadeIn(10).fadeOut(10).fadeIn(10).fadeOut(10).fadeIn(10).fadeOut(10)
+                    .fadeIn(10).fadeOut(10).fadeIn(10).fadeOut(10).fadeIn(10).fadeOut(10).fadeIn(10).fadeOut(10).fadeIn(10).fadeIn(10).fadeOut(10).fadeIn(10).fadeOut(10).fadeIn(10).fadeOut(10)
+                    .fadeIn(10).fadeOut(10).fadeIn(10).fadeOut(10).fadeIn(10).fadeOut(10).fadeIn(10).fadeOut(10).fadeIn(10).fadeIn(10).fadeOut(10).fadeIn(10).fadeOut(10).fadeIn(10).fadeOut(10)
+                    .fadeIn(10).fadeOut(10).fadeIn(10).fadeOut(10).fadeIn(10).fadeOut(10).fadeIn(10).fadeOut(10).fadeIn(10).fadeIn(10).fadeOut(10).fadeIn(10).fadeOut(10).fadeIn(10).fadeOut(10)
+                    .fadeIn(10).fadeOut(10).fadeIn(10).fadeOut(10).fadeIn(10).fadeOut(10).fadeIn(10).fadeOut(10).fadeIn(10).fadeIn(10).fadeOut(10).fadeIn(10).fadeOut(10).fadeIn(10).fadeOut(10)
+                    .fadeIn(10).fadeOut(10).fadeIn(10).fadeOut(10).fadeIn(10).fadeOut(10).fadeIn(10).fadeOut(10).fadeIn(10).fadeIn(10).fadeOut(10).fadeIn(10).fadeOut(10).fadeIn(10).fadeOut(10)
+                    .fadeIn(10).fadeOut(10).fadeIn(10).fadeOut(10).fadeIn(10).fadeOut(10).fadeIn(10).fadeOut(10).fadeIn(10).fadeIn(10).fadeOut(10).fadeIn(10).fadeOut(10).fadeIn(10).fadeOut(10)
+                    .fadeIn(10).fadeOut(10).fadeIn(10).fadeOut(10).fadeIn(10).fadeOut(10).fadeIn(10).fadeOut(10).fadeIn(10).fadeIn(10).fadeOut(10).fadeIn(10).fadeOut(10).fadeIn(10).fadeOut(10)
+                    .fadeIn(10).fadeOut(10).fadeIn(10).fadeOut(10).fadeIn(10).fadeOut(10).fadeIn(10).fadeOut(10).fadeIn(10).fadeIn(10).fadeOut(10).fadeIn(10).fadeOut(10).fadeIn(10).fadeOut(10)
+                    .fadeIn(10).fadeOut(10).fadeIn(10).fadeOut(10).fadeIn(10).fadeOut(10).fadeIn(10).fadeOut(10).fadeIn(10).fadeIn(10).fadeOut(10).fadeIn(10).fadeOut(10).fadeIn(10).fadeOut(10)
+                    .fadeIn(10).fadeOut(10).fadeIn(10).fadeOut(10).fadeIn(10).fadeOut(10).fadeIn(10).fadeOut(10).fadeIn(10);
+
             }
 
         }else{
