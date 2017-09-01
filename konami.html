@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Konami Code</title>
+    <link href="https://fonts.googleapis.com/css?family=Monofett" rel="stylesheet">
+    <link rel="stylesheet" href="css/konami.css">
+</head>
+<body>
+        <h1 id="konami">Enter The Konami Code!</h1>
+
+        <h1 id="mortal">You Entered The Konami Code!!!</h1>
+    <div id="content">
+
+
+    </div>
+
+<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+<script>
+    "use strict";
+
+    $('#konami').hide().delay(1000).fadeIn('slow');
+    $('#content').hide();
+    $('#mortal').hide();
+
+
+
+    var konamiCode = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65, 13];
+    var konami_index = 0;
+    $(document).keydown(function(e){
+        if(e.keyCode === konamiCode[konami_index++]){
+            if(konami_index === konamiCode.length){
+                konami_index = [];
+
+
+
+                $('#content').fadeIn(100).fadeOut(100).fadeIn(100).fadeOut(100).fadeIn(100).fadeOut(100)
+                    .fadeIn(100).fadeOut(100).fadeIn(100).fadeOut(100).fadeIn(100).fadeOut(100).fadeIn(100).fadeOut(100).fadeIn(100);
+
+
+
+                $('#mortal').fadeIn(100).fadeOut(100).fadeIn(100).fadeOut(100).fadeIn(100).fadeOut(100)
+            .fadeIn(100).fadeOut(100).fadeIn(100).fadeOut(100).fadeIn(100).fadeOut(100).fadeIn(100).fadeOut(100).fadeIn(100);
+            }
+
+        }else{
+            konami_index = 0;
+        }
+    });
+
+
+
+
+
+</script>
+</body>
+</html>
+
