@@ -13,6 +13,9 @@
     </style>
 </head>
 <body>
+<div id="span">
+    <h3>Would you like to sign up for our newsletter?</h3><span>x</span>
+</div>
 
 
 <dl>
@@ -109,13 +112,16 @@
 </ul>
 <button id='button' type="button">Highlight last items</button>
 
+<h2>Would you like to register for our Site?</h2>
+
 
 <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
 <script>
     "use strict";
 
     $('dd').addClass('invisible');
-
+    $('ul').hide();
+    $('h2').hide().delay(8000).fadeIn('slow');
 
 
 
@@ -143,11 +149,17 @@
     });
 
     $('h3').click(function(){
-        $(this).next().css('font-weight', 'bold');
+        $(this).next().css('font-weight', 'bold').slideDown();
     });
+
 
     $('li').click(function(){
         $(this).parent().children().first().css('color', 'blue');
+    });
+
+
+    $('span').click(function(){
+        $('#span').hide();
     })
 
 
