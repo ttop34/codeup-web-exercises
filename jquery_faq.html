@@ -61,6 +61,54 @@
         </dd>
 </dl>
 <a href="#" id="link">Display Answers</a>
+<br>
+<h3 class="heading">Acadia National Park</h3>
+<ul>
+    <li>
+        President Wilson originally established the park as Sieur de Monts National Monument.
+    </li>
+    <li>
+        The name Lafayette National Park was meant to honor an American Revolution supporter by the name of Marquis de Lafayette. He was French.
+    </li>
+    <li>
+        The land that makes up the park was largely donated by those who believed in preserving the land in perpetuity.
+    </li>
+    <li>
+        There are a total of 26 mountains in Acadia National Park.
+    </li>
+</ul>
+<h3 class="heading">Korean War Veterans Memorial</h3>
+<ul>
+    <li class=>
+        At the soldiers' feet granite slabs represent the numerous obstacles these men encountered in war. Numerous juniper bushes surrounding them symbolize the rough terrain they traversed.
+    </li>
+    <li>
+        The monument is located next to the Lincoln Memorial, across the reflecting pool from the Vietnam Veterans Memorial.
+    </li>
+    <li>
+        Three of the soldiers are in the adjacent woods. If you stand at the memorial's flagpole and look through the statues, you can't be sure how many there are; there could be thousands of men emerging from the woods.
+    </li>
+    <li>
+        The monument features stainless-steel statues of 19 Korean War soldiers from the U.S. Army, Marines, Navy, and Air Force. Standing approximately 7'3" tall, the soldiers represent a racial and ethnic cross section of the U.S.
+    </li>
+</ul>
+<h3 class="heading">Yellowstone National Park</h3>
+<ul>
+    <li>
+        Yellowstone is larger than the states of Rhode Island and Delaware combined.
+    </li>
+    <li>
+        While there is evidence of human habitation in Yellowstone dating back more than 10,000 years, its geographical wonders were completely unknown to Americans until the 19th century.
+    </li>
+    <li>
+        Early accounts of Yellowstone’s geysers, hot springs and fumaroles where often dismissed as frontier legends, but scientists now know that they are the result of a “supervolcano” located beneath the park.
+    </li>
+    <li>
+        Yellowstone’s remote location ensure that it only received a couple thousand visitors during its first several years as a national park, but tourism later exploded following the 1883 completion of the Northern Pacific Railroad.
+    </li>
+</ul>
+<button id='button' type="button">Highlight last items</button>
+
 
 <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
 <script>
@@ -85,9 +133,22 @@
         else {
            $(this).addClass('highlighted')
         }
-
     });
 
+
+    $('button').click(function(){
+        $('ul').each(function(){
+            $(this).children().last().css('background-color', 'yellow');
+        })
+    });
+
+    $('h3').click(function(){
+        $(this).next().css('font-weight', 'bold');
+    });
+
+    $('li').click(function(){
+        $(this).parent().children().first().css('color', 'blue');
+    })
 
 
 
