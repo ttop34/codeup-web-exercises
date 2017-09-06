@@ -9,5 +9,33 @@
     <div class="post">
 
     </div>
+
+
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+<script>
+(function(){
+    "use strict";
+
+
+         $.ajax("data/blog.json").done(function (blog){
+
+             let content = "";
+
+             blog.forEach(function (stuff) {
+                  content += "<h2>" + stuff.title + "</h2>\n" +
+                        "<p>" + stuff.content + "</p>\n"+
+                        "<span>" + stuff.date + "</span>\n" +
+                        "<span>" + stuff.categories + "</span>\n" +  "<br>" + "<br>";
+
+             });
+                 $('.post').append(content);
+
+
+
+         })
+
+
+})()
+    </script>
 </body>
 </html>
